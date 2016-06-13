@@ -1,41 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18393" started-at="2016-06-12T13:05:47Z" finished-at="2016-06-12T13:06:05Z">
+  <suite name="Default suite" duration-ms="36222" started-at="2016-06-13T06:57:07Z" finished-at="2016-06-13T06:57:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18393" started-at="2016-06-12T13:05:47Z" finished-at="2016-06-12T13:06:05Z">
+    <test name="Default test" duration-ms="36222" started-at="2016-06-13T06:57:07Z" finished-at="2016-06-13T06:57:43Z">
       <class name="com.jiedaibao.test.TestPCIndex">
-        <test-method status="FAIL" signature="init()[pri:0, instance:com.jiedaibao.test.TestPCIndex@1995bf19]" name="init" is-config="true" duration-ms="0" started-at="2016-06-12T21:05:47Z" finished-at="2016-06-12T21:05:47Z">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: '2013-20160323DP', ip: '100.66.162.192', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
+        <test-method status="PASS" signature="init()[pri:0, instance:com.jiedaibao.test.TestPCIndex@1effd40a]" name="init" is-config="true" duration-ms="24639" started-at="2016-06-13T14:57:07Z" finished-at="2016-06-13T14:57:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="testDownload()[pri:0, instance:com.jiedaibao.test.TestPCIndex@1effd40a]" name="testDownload" duration-ms="11534" started-at="2016-06-13T14:57:32Z" description="立刻下载、观看视频、前往企业版" finished-at="2016-06-13T14:57:43Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: '2013-20160323DP', ip: '100.66.162.192', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
-	at com.jiedaibao.test.TestPCIndex.init(TestPCIndex.java:26)
+              <![CDATA[java.lang.NullPointerException
+	at com.jiedaibao.pageobjects.CommonHeaderPage.gotoPcIndexPage(CommonHeaderPage.java:37)
+	at com.jiedaibao.test.TestPCIndex.testDownload(TestPCIndex.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
@@ -54,43 +41,12 @@ Driver info: driver.version: FirefoxDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
-	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
-	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
-	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
-	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 33 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="testFunction()[pri:0, instance:com.jiedaibao.test.TestPCIndex@1995bf19]" name="testFunction" duration-ms="10" started-at="2016-06-12T21:06:05Z" description="首页的功能介绍验证" finished-at="2016-06-12T21:06:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFunction -->
+        </test-method> <!-- testDownload -->
       </class> <!-- com.jiedaibao.test.TestPCIndex -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

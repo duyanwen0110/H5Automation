@@ -5,7 +5,7 @@
     <classes>
       <class name="com.jiedaibao.test.TestPCIndex">
         <methods>
-          <include name="testFunction"/>
+          <include name="testDownload"/>
           <include name="init"/>
         </methods>
       </class> <!-- com.jiedaibao.test.TestPCIndex -->

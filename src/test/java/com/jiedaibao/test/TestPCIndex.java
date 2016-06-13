@@ -6,9 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.jiedaibao.pageobjects.CommonHeaderPage;
+import com.jiedaibao.pageobjects.PcIndexPage;
 import com.jiedaibao.utils.Snapshot;
 import com.jiedaibao.utils.WaitTool;
 
@@ -16,35 +19,39 @@ public class TestPCIndex {
 	WebDriver driver;
 	Snapshot snapshot;
 	WaitTool waitTool;
+	CommonHeaderPage commonHeaderPage;
 
 	@BeforeMethod
 	public void init() {
 //		System.setProperty("webdriver.firefox.bin",
 //				"D:/work/programFiles/firefox/firefox.exe");
-//		System.setProperty("webdriver.chrome.driver",
-//				"C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chrome.exe");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		String url = "http://www.jiedaibao.com";
 		driver.get(url);
 		snapshot = new Snapshot();
-		waitTool = new WaitTool();
+		waitTool = new WaitTool(); 
+		commonHeaderPage = new CommonHeaderPage(driver);
 	}
 	
-	@Test(description="首页的功能介绍验证")
-	public void testFunction() {
-		WebElement element = driver.findElement(By
-						.cssSelector(".downloads .qr-area>.has-tips .custom-button-text"));
-		waitTool.waitElement(driver, element);
-		snapshot.getSnapshot((TakesScreenshot)driver, "1.png");
-		Actions action = new Actions(driver);
-		action.moveToElement(element).clickAndHold().build().perform();
-		snapshot.getSnapshot((TakesScreenshot)driver, "moveto_QRcode.png");
-		driver.close();
-	}
+//	@Test(description="首页的功能介绍验证")
+//	public void testFunction() {
+//		WebElement element = driver.findElement(By
+//						.cssSelector(".downloads .qr-area>.has-tips .custom-button-text"));
+//		waitTool.waitElement(driver, element);
+//		snapshot.getSnapshot((TakesScreenshot)driver, "1.png");
+//		Actions action = new Actions(driver);
+//		action.moveToElement(element).clickAndHold().build().perform();
+//		snapshot.getSnapshot((TakesScreenshot)driver, "moveto_QRcode.png");
+//		driver.close();
+//	}
 
-//	@Test(description="立刻下载、观看视频、前往企业版")
-//	public void testDownload(){
+	@Test(description="立刻下载、观看视频、前往企业版")
+	public void testDownload(){
+		PcIndexPage pcIndexPage = commonHeaderPage.gotoPcIndexPage();
+		pcIndexPage.verifyDownloadButton();
+		pcIndexPage.verifyVideoButton();
+		pcIndexPage.verfyGotoQiyeButton();
 //		WebElement lastArrowButton = driver.findElement(By.cssSelector(".pointContainr>img:last-child"));
 //		lastArrowButton.click();
 //		WebElement downloadButton = driver.findElement(By.cssSelector(".bannerChoice.peopleBanner .downloadNow .innerContainer"));
@@ -66,5 +73,5 @@ public class TestPCIndex {
 //		WebElement gotoQiyeButton = driver.findElement(By.cssSelector(".active #downloadContainer .innerContainer.videoInner>span"));
 //		Assert.assertEquals(gotoQiyeButton.getText().trim(), "前往企业版", "前往企业版控件验证成功");
 //		driver.close();
-//	}
+	}
 }
