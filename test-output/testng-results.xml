@@ -1,53 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36222" started-at="2016-06-13T06:57:07Z" finished-at="2016-06-13T06:57:43Z">
+  <suite name="Default suite" duration-ms="14260" started-at="2016-06-14T06:53:37Z" finished-at="2016-06-14T06:53:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36222" started-at="2016-06-13T06:57:07Z" finished-at="2016-06-13T06:57:43Z">
-      <class name="com.jiedaibao.test.TestPCIndex">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.jiedaibao.test.TestPCIndex@1effd40a]" name="init" is-config="true" duration-ms="24639" started-at="2016-06-13T14:57:07Z" finished-at="2016-06-13T14:57:32Z">
+    <test name="Default test" duration-ms="14260" started-at="2016-06-14T06:53:37Z" finished-at="2016-06-14T06:53:51Z">
+      <class name="com.jiedaibao.test.TestPromoterApply">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.jiedaibao.test.TestPromoterApply@68c3b8a3]" name="init" is-config="true" duration-ms="5715" started-at="2016-06-14T14:53:37Z" finished-at="2016-06-14T14:53:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testDownload()[pri:0, instance:com.jiedaibao.test.TestPCIndex@1effd40a]" name="testDownload" duration-ms="11534" started-at="2016-06-13T14:57:32Z" description="立刻下载、观看视频、前往企业版" finished-at="2016-06-13T14:57:43Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.jiedaibao.pageobjects.CommonHeaderPage.gotoPcIndexPage(CommonHeaderPage.java:37)
-	at com.jiedaibao.test.TestPCIndex.testDownload(TestPCIndex.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="testCompanyPromoterApply()[pri:0, instance:com.jiedaibao.test.TestPromoterApply@68c3b8a3]" name="testCompanyPromoterApply" duration-ms="8517" started-at="2016-06-14T14:53:43Z" description="申请为推广商个人版" finished-at="2016-06-14T14:53:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDownload -->
-      </class> <!-- com.jiedaibao.test.TestPCIndex -->
+        </test-method> <!-- testCompanyPromoterApply -->
+      </class> <!-- com.jiedaibao.test.TestPromoterApply -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

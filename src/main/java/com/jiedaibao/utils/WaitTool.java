@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitTool {
      public void waitElement(final WebDriver driver,final WebElement element){
-    	WebDriverWait wait = new WebDriverWait(driver, 40);
+    	WebDriverWait wait = new WebDriverWait(driver, 30);
  		wait.until(new ExpectedCondition<WebElement>() {
  			public WebElement apply(WebDriver d){
  		        return element; 

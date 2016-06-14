@@ -3,6 +3,9 @@ package com.jiedaibao.pageobjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.jiedaibao.utils.WaitTool;
 
 
 public class CommonHeaderPage{
@@ -28,9 +31,13 @@ public class CommonHeaderPage{
 	private WebElement pcAboutLink;
 	
 	private WebDriver driver;
+	private WaitTool waitTool;
 	
 	public CommonHeaderPage(WebDriver driver){
+		PageFactory.initElements(driver, this);
 		this.driver =  driver;
+		waitTool = new WaitTool();
+		waitTool.waitElement(driver, promoterApplyLink);
 	}
 	
 	public PcIndexPage gotoPcIndexPage(){
@@ -41,6 +48,15 @@ public class CommonHeaderPage{
 	public QiyePage gotoQiyePage(){
 		qiyeLink.click();
 		return new QiyePage(driver);
+	}
+	
+	public OpromoterApplyPage gotOpromoterApplyPage(){
+		promoterApplyLink.click();
+		return new OpromoterApplyPage(driver);
+	}
+	
+	public void closeDriver(){
+		driver.close();
 	}
 	
 }

@@ -12,7 +12,7 @@ public class Snapshot {
 	    File scrFile = drivername.getScreenshotAs(OutputType.FILE);
 	        try {
 	            System.out.println("save snapshot path is:D:/"+filename);
-	            FileUtils.copyFile(scrFile, new File("D:\\work\\JDBAutomation\\test-output\\screenshots\\"+filename));
+	            FileUtils.copyFile(scrFile, new File("D:\\work\\H5Automation\\H5Automation\\test-output\\screenshots\\"+filename));
 	        } catch (IOException e) {
 	            System.out.println("Can't save screenshot");
 	            e.printStackTrace();
