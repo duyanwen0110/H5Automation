@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14260" started-at="2016-06-14T06:53:37Z" finished-at="2016-06-14T06:53:51Z">
+  <suite name="Default suite" duration-ms="14977" started-at="2016-06-14T07:19:04Z" finished-at="2016-06-14T07:19:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14260" started-at="2016-06-14T06:53:37Z" finished-at="2016-06-14T06:53:51Z">
+    <test name="Default test" duration-ms="14977" started-at="2016-06-14T07:19:04Z" finished-at="2016-06-14T07:19:19Z">
       <class name="com.jiedaibao.test.TestPromoterApply">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.jiedaibao.test.TestPromoterApply@68c3b8a3]" name="init" is-config="true" duration-ms="5715" started-at="2016-06-14T14:53:37Z" finished-at="2016-06-14T14:53:43Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.jiedaibao.test.TestPromoterApply@e1f8dfe]" name="init" is-config="true" duration-ms="6313" started-at="2016-06-14T15:19:04Z" finished-at="2016-06-14T15:19:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testCompanyPromoterApply()[pri:0, instance:com.jiedaibao.test.TestPromoterApply@68c3b8a3]" name="testCompanyPromoterApply" duration-ms="8517" started-at="2016-06-14T14:53:43Z" description="申请为推广商个人版" finished-at="2016-06-14T14:53:51Z">
+        <test-method status="PASS" signature="testCompanyPromoterApply()[pri:0, instance:com.jiedaibao.test.TestPromoterApply@e1f8dfe]" name="testCompanyPromoterApply" duration-ms="8636" started-at="2016-06-14T15:19:11Z" description="申请为推广商企业版" finished-at="2016-06-14T15:19:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompanyPromoterApply -->

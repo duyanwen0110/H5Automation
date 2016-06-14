@@ -34,7 +34,7 @@ public class TestPromoterApply {
 		commonHeaderPage.closeDriver();
 	}
 	
-	@Test(description = "申请为推广商个人版")
+	@Test(description = "申请为推广商企业版")
 	public void testCompanyPromoterApply() throws Exception {
 		opromoterBean = new OpromoterBean("tester", "612657189910110389",
 				"19100000012", "test@jiedaibao.com", "北京", "沙河", "cooperSource");
@@ -42,6 +42,7 @@ public class TestPromoterApply {
 		opromoterApplyPage.applyForCompanyOpromoter(opromoterBean);
 		// opromoterApplyPage.clickSubmitButton();
 		commonHeaderPage.closeDriver();
+		
 	}
 	
 }

@@ -48,6 +48,9 @@ public class OpromoterApplyPage {
 	@FindBy(css=".submit")
 	private WebElement submitButton;
 	
+	@FindBy(css=".submit")
+	private WebElement person;
+	
 	private WebDriver driver;
 	private WaitTool waitTool;
 	private Snapshot snapshot;
