@@ -48,8 +48,14 @@ public class OpromoterApplyPage {
 	@FindBy(css=".submit")
 	private WebElement submitButton;
 	
-	@FindBy(css=".submit")
-	private WebElement person;
+	@FindBy(css="a[href*='person']")
+	private WebElement personOpromoterLink;
+	
+	@FindBy(css="a[href*='company']")
+	private WebElement companyOpromoterLink;
+	
+	@FindBy(css="#typeText")
+	private WebElement typeTextLabel;
 	
 	private WebDriver driver;
 	private WaitTool waitTool;
@@ -106,5 +112,17 @@ public class OpromoterApplyPage {
     
 	public void clickSubmitButton(){
 		submitButton.click();
+	}
+	
+	public void clickPersonOpromoterLink(){
+		personOpromoterLink.click();
+		waitTool.waitElement(driver, typeTextLabel);
+		snapshot.getSnapshot((TakesScreenshot)driver, "clickPersonOpromoterLink.png");
+	}
+	
+	public void clickCompanyOpromoterLink(){
+		companyOpromoterLink.click();
+		waitTool.waitElement(driver, typeTextLabel);
+		snapshot.getSnapshot((TakesScreenshot)driver, "clickCompanyOpromoterLink.png");
 	}
 }

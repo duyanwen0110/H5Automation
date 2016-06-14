@@ -42,7 +42,6 @@ public class TestPromoterApply {
 		opromoterApplyPage.applyForCompanyOpromoter(opromoterBean);
 		// opromoterApplyPage.clickSubmitButton();
 		commonHeaderPage.closeDriver();
-		
 	}
 	
 }
