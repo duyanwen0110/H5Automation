@@ -50,7 +50,7 @@ public class CommonHeaderPage{
 		return new QiyePage(driver);
 	}
 	
-	public OpromoterApplyPage gotOpromoterApplyPage(){
+	public OpromoterApplyPage gotoOpromoterApplyPage(){
 		promoterApplyLink.click();
 		return new OpromoterApplyPage(driver);
 	}

@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14977" started-at="2016-06-14T07:19:04Z" finished-at="2016-06-14T07:19:19Z">
+  <suite name="Default suite" duration-ms="14704" started-at="2016-06-15T11:35:12Z" finished-at="2016-06-15T11:35:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14977" started-at="2016-06-14T07:19:04Z" finished-at="2016-06-14T07:19:19Z">
+    <test name="Default test" duration-ms="14704" started-at="2016-06-15T11:35:12Z" finished-at="2016-06-15T11:35:27Z">
       <class name="com.jiedaibao.test.TestPromoterApply">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.jiedaibao.test.TestPromoterApply@e1f8dfe]" name="init" is-config="true" duration-ms="6313" started-at="2016-06-14T15:19:04Z" finished-at="2016-06-14T15:19:11Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.jiedaibao.test.TestPromoterApply@5805dc52]" name="init" is-config="true" duration-ms="5639" started-at="2016-06-15T19:35:12Z" finished-at="2016-06-15T19:35:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testCompanyPromoterApply()[pri:0, instance:com.jiedaibao.test.TestPromoterApply@e1f8dfe]" name="testCompanyPromoterApply" duration-ms="8636" started-at="2016-06-14T15:19:11Z" description="申请为推广商企业版" finished-at="2016-06-14T15:19:19Z">
+        <test-method status="PASS" signature="testPromoterLink()[pri:0, instance:com.jiedaibao.test.TestPromoterApply@5805dc52]" name="testPromoterLink" duration-ms="9039" started-at="2016-06-15T19:35:18Z" description="个人版企业版连接" finished-at="2016-06-15T19:35:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCompanyPromoterApply -->
+        </test-method> <!-- testPromoterLink -->
       </class> <!-- com.jiedaibao.test.TestPromoterApply -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
